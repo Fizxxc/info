@@ -1,0 +1,97 @@
+ /* Basic Reset */
+ * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #e6f2ff;
+    color: #333;
+  }
+
+  .container {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: auto 1fr auto;
+    height: 100vh;
+  }
+
+  .header, .footer {
+    background-color: #0066cc;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    font-size: 26px;
+    font-weight: bold;
+  }
+
+  .sidebar {
+    background-color: #004080;
+    color: white;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .sidebar .time, .sidebar .date {
+    font-size: 28px;
+    font-weight: bold;
+    margin: 10px 0;
+  }
+
+  .main-content {
+    padding: 30px;
+    background-color: #ffffff;
+    overflow-y: auto;
+  }
+
+  .main-content h2 {
+    font-size: 24px;
+    color: #004080;
+    margin-bottom: 15px;
+  }
+
+  .schedule {
+    margin-top: 20px;
+  }
+
+  .schedule ul {
+    list-style-type: none;
+    padding: 0;
+  }
+
+  .schedule li {
+    font-size: 20px;
+    color: #333;
+    background-color: #e6f2ff;
+    padding: 10px 20px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .news-ticker {
+    background-color: #0066cc;
+    color: white;
+    font-size: 18px;
+    padding: 10px;
+    overflow: hidden;
+    white-space: nowrap;
+  }
+
+  .news-ticker span {
+    display: inline-block;
+    padding-left: 100%;
+    animation: scroll 15s linear infinite;
+  }
+
+  @keyframes scroll {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-100%); }
+  }

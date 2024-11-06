@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Display Informasi Kelas</title>
+</head>
+<body>
+
+<div class="container">
+  <!-- Header -->
+  <div class="header">Informasi Kelas DKV</div>
+
+  <!-- Sidebar for Time and Date -->
+  <div class="sidebar">
+    <div class="time" id="time">00:00:00</div>
+    <div class="date" id="date">Senin, 01 Januari 2023</div>
+  </div>
+
+  <!-- Main Content -->
+  <div class="main-content">
+    <h2>Jadwal Pelajaran Hari Ini</h2>
+    <div class="schedule">
+      <ul id="schedule-list"></ul>
+    </div>
+    <p id="lesson-message" style="font-size: 20px; margin-top: 20px; color: #004080;"></p>
+  </div>
+
+  <!-- Footer - News Ticker -->
+  <div class="footer news-ticker">
+    <span>Info Sekolah: Selamat datang di tahun ajaran baru - Tetap semangat dan terus belajar! - Jangan lupa untuk hadir tepat waktu dan membawa perlengkapan lengkap.</span>
+  </div>
+</div>
+
+<audio id="start-sound" src="ding.mp3"></audio>
+<audio id="end-sound" src="bell.mp3"></audio>
+
+<script src="script.js"></script>
+</body>
+</html>
